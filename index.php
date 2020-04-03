@@ -42,11 +42,21 @@ require_once("config.php");
 //====================
 //Update de um usuário
 //====================
+//$usuario = new Usuario();
+//$usuario->loadById(2);
+//$usuario->update("professor", "333444");
+//echo $usuario;
+
+//====================
+//Delete de um usuário
+//====================
 
 $usuario = new Usuario();
-$usuario->loadById(2);
-$usuario->update("professor", "333444");
-
+$usuario->loadById(6);
+$usuario->delete();
 echo $usuario;
+
+
+
 
 ?>
